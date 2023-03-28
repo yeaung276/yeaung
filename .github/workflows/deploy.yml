@@ -27,13 +27,17 @@ jobs:
       - name: Build
         run: |
           pnpm build && pnpm export
-      - name: add/commit/push
+      - name: add/commit
         run: |
         git config --local user.email github-actions[bot]@users.noreply.github.com
         git config --local user.name github-actions[bot]
         git add out
         git commit -m "build[github-action]"
-        git push origin
+      - name: push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
