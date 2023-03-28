@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -29,9 +27,15 @@ jobs:
       - name: Build
         run: |
           pnpm build && pnpm export
+      - name: add/commit/push
+        run: |
+        git config --local user.email github-actions[bot]@users.noreply.github.com
+        git config --local user.name github-actions[bot]
+        git add out
+        git commit -m "build[github-action]"
+        git push origin
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/trunk' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: out
