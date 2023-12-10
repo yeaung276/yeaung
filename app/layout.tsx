@@ -1,4 +1,4 @@
-import './index.css';
+import "./index.css";
 
 export default function RootLayout({
   children,
@@ -7,9 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-[100vh]">
-        {children}
-      </body>
+      <body className="overflow-hidden">{children}</body>
     </html>
   );
 }
