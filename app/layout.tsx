@@ -1,0 +1,15 @@
+import './index.css';
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="h-[100vh]">
+        {children}
+      </body>
+    </html>
+  );
+}
