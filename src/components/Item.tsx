@@ -1,5 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import React from "react";
+import Image from "./Image";
 
 interface ItemProps {
   img?: string | StaticImageData;
