@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  assetPrefix: '/yeaung', // process.env.NODE_ENV === 'production' ? '/yeaung' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/yeaung' : '',
+  path: '/yeaung',
   images: { unoptimized: true }
 }
 
