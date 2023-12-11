@@ -1,5 +1,5 @@
 1:HL["/yeaung/_next/static/css/dffa60f5e3548cd3.css","style",{"crossOrigin":""}]
-0:["MzhszvLsYxgjjBbe4_tNC",[[["",{"children":["projects",{"children":[["projectId","md","d"],{"children":["__PAGE__?{\"projectId\":\"md\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/yeaung/_next/static/css/dffa60f5e3548cd3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["0p6QquGlXVeu4ECkopexq",[[["",{"children":["projects",{"children":[["projectId","md","d"],{"children":["__PAGE__?{\"projectId\":\"md\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/yeaung/_next/static/css/dffa60f5e3548cd3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[825,[],""]
 5:I[4348,[],""]
 6:I[1840,["876","static/chunks/876-be33b9f975d28c66.js","570","static/chunks/app/projects/layout-6c521148ba6c76cf.js"],""]
