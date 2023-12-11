@@ -1,4 +1,4 @@
 
-import projects from './dataSource/projects.json';
+import {projects} from './dataSource/projects';
 
-export const getProjects = async () => projects.projects;
+export const getProjects = async () => projects;

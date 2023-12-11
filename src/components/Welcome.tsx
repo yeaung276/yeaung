@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <div className="bg-welcome bg-no-repeat bg-cover h-[30rem] r">
+    <div className="bg-welcome bg-no-repeat bg-cover h-[30rem] max-w-[100vw]">
       <div className="flex items-center h-[25rem]">
         <div className="w-1/2 flex justify-center">
           <Image
@@ -13,7 +13,7 @@ export default function Welcome() {
             alt="title-image"
           />
         </div>
-        <div>
+        <div className="font-quote animate-welcome">
           <h1 className="text-5xl float-right w-[30rem] font-bold">Hello, </h1>
           <p className="text-4xl">
             {" "}
