@@ -1,6 +1,6 @@
 import Item from "@/components/Item";
+import Link from "@/components/Link";
 import { getProjects } from "@/data/fetches";
-import Link from "next/link";
 
 export default async function Page() {
   const projects = await getProjects();

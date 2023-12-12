@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "./Image";
+import Link from "./Link";
 
 interface HeaderProps {
   onIconClicked?: () => void;

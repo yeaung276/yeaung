@@ -1,6 +1,5 @@
-
-import Link from "next/link";
 import Image from "./Image";
+import Link from "./Link";
 
 export default function Certification() {
   return (
