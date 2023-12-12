@@ -20,7 +20,7 @@ export const projects = [
     cover: ImageSearch,
     description:
       "An nst program which can blend two image together to get artistic images",
-    md: path.resolve('./markdowns/nst.md'),
+    md: path.resolve('src/data/dataSource/markdowns/nst.md'),
   },
   {
     unique: "sso-by-face-recognization",
@@ -28,7 +28,7 @@ export const projects = [
     cover: NSTImage,
     description:
       "An nst program which can blend two image together to get artistic images",
-    md: path.resolve('./markdowns/nst.md'),
+    md: path.resolve('src/data/dataSource/markdowns/nst.md'),
   },
   {
     unique: "status-annotator",
@@ -36,6 +36,6 @@ export const projects = [
     cover: SarifAnnotator,
     description:
       "An nst program which can blend two image together to get artistic images",
-    md: path.resolve('./markdowns/nst.md'),
+    md: path.resolve('src/data/dataSource/markdowns/nst.md'),
   },
 ];
