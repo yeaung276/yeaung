@@ -2,7 +2,7 @@ import Email from "@/icons/Email";
 import Github from "@/icons/Github";
 import Phone from "@/icons/Phone";
 import Linkedin from "@/icons/linkedin";
-import Link from "./Link";
+import Link from "next/link";
 
 export default function Contact() {
   return (
