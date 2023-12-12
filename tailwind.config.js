@@ -12,21 +12,33 @@ module.exports = {
     extend: {
       keyframes: {
         wiggle: {
-          '0%': { position: 'relative', bottom: '-10rem', opacity: 0.2 },
-          '100%': { position: 'relative', bottom: '0rem', opacity: 1 },
-        }
+          "0%": { position: "relative", bottom: "-10rem", opacity: 0.2 },
+          "100%": { position: "relative", bottom: "0rem", opacity: 1 },
+        },
       },
       backgroundImage: {
-        'nav': "url('/nav-bg.jpg')",
-        'side': "url('/side-bg.jpg')",
-        'welcome': "url('/background.avif')"
+        nav: `url(${
+          process.env.NODE_ENV === "production"
+            ? "/yeaung/nav-bg.jpg"
+            : "/nav-bg.jpg"
+        })`,
+        side: `url(${
+          process.env.NODE_ENV === "production"
+            ? "/yeaung/side-bg.jpg"
+            : "side-bg.jpg"
+        })`,
+        welcome: `url(${
+          process.env.NODE_ENV === "production"
+            ? "/yeaung/background.avif"
+            : "background.avig"
+        })`,
       },
       animation: {
-        welcome: "wiggle 1s ease-in-out"
+        welcome: "wiggle 1s ease-in-out",
       },
     },
     fontFamily: {
-      quote: 'Kalnia, Arial, sans-serif'
+      quote: "Kalnia, Arial, sans-serif",
     },
   },
   plugins: [],
