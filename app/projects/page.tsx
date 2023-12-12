@@ -7,7 +7,7 @@ export default async function Page() {
   return (
     <div className="flex flex-wrap justify-center sm:justify-left">
       {projects.map((p) => (
-        <Link key={p.unique} href={`/projects/${p.md}`}>
+        <Link key={p.unique} href={`/projects/${p.unique}`}>
           <Item title={p.title} img={p.cover} description={p.description} />
         </Link>
       ))}

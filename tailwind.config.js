@@ -25,12 +25,12 @@ module.exports = {
         side: `url(${
           process.env.NODE_ENV === "production"
             ? "/yeaung/side-bg.jpg"
-            : "side-bg.jpg"
+            : "/side-bg.jpg"
         })`,
         welcome: `url(${
           process.env.NODE_ENV === "production"
             ? "/yeaung/background.avif"
-            : "background.avig"
+            : "/background.avif"
         })`,
       },
       animation: {

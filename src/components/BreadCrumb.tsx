@@ -7,7 +7,7 @@ export default function BreadCrumb() {
   const pathname = usePathname();
   const paths = pathname.split("/");
   return (
-    <div className="text-lg">
+    <div className="text-lg m-3">
       {paths.map((x, i) => (
         <Link key={x} href={`/${paths.slice(1, i + 1).join("/")}`}>
           <span className="cursor-pointer">
